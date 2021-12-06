@@ -13,6 +13,10 @@ PermitRootLogin no
 X11Forwarding no
 AllowTcpForwarding no
 
+# Allow for password authentication
+PasswordAuthentication yes
+ChallengeResponseAuthentication
+
 # Force sftp and chroot jail
 Subsystem sftp internal-sftp
 ForceCommand internal-sftp
